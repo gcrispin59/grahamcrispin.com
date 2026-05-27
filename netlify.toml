@@ -1,0 +1,52 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Legacy HubSpot subdomain paths → new Realize page
+[[redirects]]
+  from = "/realizebv"
+  to = "/realize/"
+  status = 301
+
+[[redirects]]
+  from = "/realizebv/*"
+  to = "/realize/:splat"
+  status = 301
+
+# TODO R.1: stable LinkedIn redirect when Realize BV company URL is ready
+# [[redirects]]
+#   from = "/realize/linkedin"
+#   to = "https://www.linkedin.com/company/REPLACE-ME"
+#   status = 302
+
+# www → apex (configure after custom domain attached)
+[[redirects]]
+  from = "https://www.grahamcrispin.com/*"
+  to = "https://grahamcrispin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

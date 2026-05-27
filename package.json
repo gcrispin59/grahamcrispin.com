@@ -1,0 +1,10 @@
+{
+  "name": "grahamcrispin.com",
+  "private": true,
+  "description": "GrahamCrispin.com static site for Netlify",
+  "scripts": {
+    "serve": "npx --yes serve .",
+    "deploy:draft": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
+  }
+}
