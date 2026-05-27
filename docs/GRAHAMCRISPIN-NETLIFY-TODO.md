@@ -8,10 +8,13 @@
 
 ## Phase 2 — Netlify + GitHub
 
-- [ ] **2.1** Netlify site `grahamcrispin` linked to `gcrispin59/grahamcrispin.com`
-- [ ] **2.2** Netlify site `www-praetorspectral` linked to `gcrispin59/www-praetorspectral`
-- [ ] **2.3** Add custom domain `grahamcrispin.com` + `www.grahamcrispin.com` in Netlify (external DNS)
-- [ ] **2.4** Copy Netlify apex A / www CNAME values for GoDaddy Phase 3
+- [x] **2.1** Netlify site `grahamcrispin` — https://grahamcrispin.netlify.app
+- [x] **2.2** Netlify site `www-praetorspectral` — https://www-praetorspectral.netlify.app
+- [x] **2.1b** GitHub `gcrispin59/grahamcrispin.com`
+- [x] **2.2b** GitHub `gcrispin59/www-praetorspectral`
+- [ ] **2.3** Confirm GitHub continuous deploy linked in Netlify UI (see [DEPLOYMENT.md](DEPLOYMENT.md))
+- [ ] **2.4** Add custom domain `grahamcrispin.com` + `www.grahamcrispin.com` in Netlify (external DNS)
+- [ ] **2.5** Copy Netlify apex A / www CNAME values for GoDaddy Phase 3
 
 ## Phase 3 — GoDaddy DNS (web only)
 

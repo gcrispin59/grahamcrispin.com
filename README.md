@@ -13,9 +13,15 @@ Open `http://localhost:3000`.
 
 ## Deploy
 
-Linked to Netlify via GitHub (`gcrispin59/grahamcrispin.com`). Push to `main` triggers production deploy.
+Linked to Netlify via GitHub (`gcrispin59/grahamcrispin.com`).
 
-Manual deploy:
+| Resource | URL |
+|----------|-----|
+| Live (Netlify) | https://grahamcrispin.netlify.app |
+| GitHub | https://github.com/gcrispin59/grahamcrispin.com |
+| Netlify admin | https://app.netlify.com/projects/grahamcrispin |
+
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for GitHub continuous deploy and custom domain steps.
 
 ```powershell
 netlify deploy --prod
